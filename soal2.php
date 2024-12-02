@@ -68,6 +68,6 @@ $result = $stmt->get_result();
 </html>
 
 <?php
-// Tutup koneksi
+
 $conn->close();
 ?>

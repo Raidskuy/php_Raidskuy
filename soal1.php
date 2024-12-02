@@ -20,7 +20,7 @@
 </head>
 <body>
     <?php
-    // Tampilan No. 1: Input Jumlah Baris dan Kolom
+    // interface no 1
     if (!isset($_POST['step']) || $_POST['step'] == 1) { 
     ?>
         <div class="container">
@@ -35,7 +35,7 @@
             </form>
         </div>
     <?php
-    // Tampilan No. 2: Form Dinamis
+    // interface no 2
     } elseif ($_POST['step'] == 2) {
         $rows = (int)$_POST['rows'];
         $cols = (int)$_POST['cols'];
@@ -56,7 +56,7 @@
             </form>
         </div>
     <?php
-    // Tampilan No. 3: Hasil Input
+    // interface no 3
     } elseif ($_POST['step'] == 3) {
         $data = $_POST['data'];
     ?>
